@@ -7,7 +7,7 @@ public class Scissors1 {
 		int low = 0;
 		int hi = 1000000;
 		int Answer;
-		int N = 0;
+		int N;
 		
 		int k = 10; //허용되는 가위질 횟수
 		while (low<=hi) {

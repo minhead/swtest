@@ -21,10 +21,6 @@ public class Pb_2579 {
 				dp[n] = Math.max(dp(n - 2) + score[n], dp(n - 3) + score[n - 1] + score[n]);
 			} else if (dp[n - 2] != 0 && dp[n - 3] == 0) {
 				dp[n] = Math.max(dp[n - 2] + score[n], dp(n - 3) + score[n - 1] + score[n]);
-			}else if (dp[n - 2] == 0 && dp[n - 3] != 0) {
-				dp[n] = Math.max(dp(n - 2) + score[n], dp[n - 3] + score[n - 1] + score[n]);				
-			}else {
-				dp[n] = Math.max(dp[n - 2] + score[n], dp[n - 3] + score[n - 1] + score[n]);				
 			}
 			return dp[n];
 		}

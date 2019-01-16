@@ -13,8 +13,8 @@ public class Pb1182 { // 부분집합의 합
 		if (step == N) {
 			if (sum == S) {
 				cnt++;
+				return;
 			}
-			return;
 		}
 
 		solve(sum + arr[step], step + 1);
